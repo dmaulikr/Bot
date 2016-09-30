@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  Bot
+//
+//  Created by tiny on 16/9/27.
+//  Copyright © 2016年 tiny. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "TRRTuringAPIConfig.h"
+#import "TRRTuringRequestManager.h"
+#import  "UIView+Additions.h"
+#import "HttpManager.h"
+#import "UIColor+Theme.h"
+#import "FFLog.h"
+
+#define DEBUGLOG_ENABLE 1
+#define INFOLOG_ENABLE  1
+#define WARNINGLOG_ENABLE 1
+#define ERRORLOG_ENABLE 1
+
+////////////////////////////////////////////////
+//#ifdef DEBUG
+//#define NSLog(...) NSLog(__VA_ARGS__)
+//#define debugMethod() NSLog(@"%s", __func__)
+//#else
+//#define NSLog(...)
+//#define debugMethod()
+//#endif
+//////////////////////////////////////////////
+
+#define SW [UIScreen mainScreen].bounds.size.width
+#define SH [UIScreen mainScreen].bounds.size.height
+#define TuringAPIKey @"8ff886661b0f4bc38c80c02fe4530273"
+
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
